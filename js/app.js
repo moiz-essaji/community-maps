@@ -25,8 +25,10 @@
   }
 
   document.getElementById("add-masjid-link").href = addMasjidUrl();
+  document.getElementById("add-masjid-link").classList.add("js-add");
   document.getElementById("github-link").href = repoUrl;
   document.getElementById("contribute-link").href = `${repoUrl}/blob/main/CONTRIBUTING.md`;
+  document.getElementById("form-github-link").href = addMasjidUrl();
 
   // ---------- Map ----------
 
@@ -92,9 +94,22 @@
         <div class="popup-actions">
           <a class="btn btn-small" href="${navigateUrl(m)}" target="_blank" rel="noopener">🧭 Navigate</a>
           <a class="btn btn-small" href="${googleMapsSearchUrl(m)}" target="_blank" rel="noopener">Google Maps</a>
-          <a class="btn btn-small" href="${reportUrl(m)}" target="_blank" rel="noopener">⚠ Report</a>
+          <a class="btn btn-small js-report" data-masjid-id="${escapeHtml(m.id)}"
+             href="${reportUrl(m)}" target="_blank" rel="noopener">⚠ Report</a>
         </div>
       </div>`;
+  }
+
+  /**
+   * Contribution links are rendered dynamically (list items, map popups), so
+   * forms.js gets a chance to upgrade each fresh batch from "open GitHub" to
+   * "open the in-app form". No-op until forms.js has loaded.
+   */
+  function notifyRendered(root) {
+    const forms = window.BMAPS_FORMS;
+    if (forms && typeof forms.wireContributionLinks === "function") {
+      forms.wireContributionLinks(root);
+    }
   }
 
   function isMobile() {
@@ -129,8 +144,9 @@
         <li class="empty-state">
           No masjids match your search.<br /><br />
           Know one that's missing?
-          <a href="${addMasjidUrl()}" target="_blank" rel="noopener">Add it →</a>
+          <a class="js-add" href="${addMasjidUrl()}" target="_blank" rel="noopener">Add it →</a>
         </li>`;
+      notifyRendered(listEl);
       return;
     }
 
@@ -148,7 +164,8 @@
         ${dist}
         <div class="item-actions">
           <a class="btn btn-small" href="${navigateUrl(m)}" target="_blank" rel="noopener">🧭 Navigate</a>
-          <a class="btn btn-small" href="${reportUrl(m)}" target="_blank" rel="noopener">⚠ Report</a>
+          <a class="btn btn-small js-report" data-masjid-id="${escapeHtml(m.id)}"
+             href="${reportUrl(m)}" target="_blank" rel="noopener">⚠ Report</a>
         </div>`;
       li.addEventListener("click", (e) => {
         if (e.target.closest("a")) return; // let action links work normally
@@ -156,6 +173,8 @@
       });
       listEl.appendChild(li);
     }
+
+    notifyRendered(listEl);
   }
 
   function renderMarkers(masjids) {
@@ -248,6 +267,19 @@
   });
 
   if (!seenDisclaimer()) openDisclaimer();
+
+  // ---------- Public API for forms.js ----------
+
+  map.on("popupopen", (e) => notifyRendered(e.popup.getElement()));
+
+  window.BMAPS_APP = {
+    map,
+    repoUrl,
+    addMasjidUrl,
+    reportUrl,
+    getMasjidById: (id) => allMasjids.find((m) => m.id === id) || null,
+    closeSidebarOnMobile,
+  };
 
   // ---------- Events ----------
 

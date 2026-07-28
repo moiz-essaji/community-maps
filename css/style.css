@@ -214,6 +214,145 @@ body {
 .modal a { color: var(--brand); }
 .modal-actions { display: flex; justify-content: flex-end; }
 
+/* ---------- Submission form ---------- */
+
+.modal-form { width: 520px; max-width: 100%; }
+
+.modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.modal-head h2 { margin-bottom: 4px; }
+
+.modal-x {
+  background: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+}
+.modal-x:hover { color: var(--text); }
+
+.form-intro { font-size: 13px; color: var(--text-muted); margin-bottom: 14px !important; }
+
+#submission-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+.req { color: #b3261e; }
+
+#submission-form input,
+#submission-form select,
+#submission-form textarea {
+  width: 100%;
+  padding: 9px 11px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+#submission-form input:focus,
+#submission-form select:focus,
+#submission-form textarea:focus { border-color: var(--brand); }
+#submission-form input[readonly] { background: #f4f6f5; color: var(--text-muted); }
+#submission-form textarea { resize: vertical; }
+
+.field-row { display: flex; gap: 10px; }
+.field-row > div { flex: 1; min-width: 0; }
+.location-row > input { flex: 1; min-width: 0; }
+
+.field-help { font-size: 12px; color: var(--text-muted); margin: 0 0 6px; }
+.field-actions { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+
+.reported-masjid {
+  background: #eef4f1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.reported-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+}
+.reported-place { color: var(--text-muted); }
+
+#turnstile-holder:not(:empty) { margin-top: 14px; }
+
+.form-error {
+  margin: 12px 0 0;
+  padding: 9px 11px;
+  background: #fdecea;
+  border-radius: 8px;
+  color: #8c1d18;
+  font-size: 13px;
+}
+.form-error[hidden] { display: none; }
+
+.form-actions { margin-top: 18px; gap: 8px; }
+
+.btn-ghost-dark {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+.btn-ghost-dark:hover { color: var(--text); border-color: var(--text-muted); }
+
+#form-submit[disabled] { opacity: 0.6; cursor: default; }
+
+.form-foot {
+  margin: 12px 0 0 !important;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  text-align: center;
+}
+.form-foot a { color: var(--brand); }
+
+.form-success { text-align: center; padding: 12px 0; }
+.form-success .success-icon { font-size: 40px; }
+.form-success h3 { margin: 8px 0; font-size: 18px; color: var(--brand-dark); }
+.form-success p { color: var(--text-muted); font-size: 14px; margin-bottom: 18px; }
+.form-success .modal-actions { justify-content: center; }
+
+/* Map location picker */
+.pick-banner {
+  position: fixed;
+  top: calc(var(--header-h) + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  font-weight: 600;
+  max-width: calc(100% - 24px);
+}
+.pick-banner[hidden] { display: none; }
+
+@media (max-width: 720px) {
+  .field-row { flex-direction: column; gap: 0; }
+  .location-row { flex-direction: row; gap: 10px; }
+  .modal { padding: 16px; }
+}
+
 /* Disclaimer link inside the Leaflet attribution bar */
 .leaflet-control-attribution .disclaimer-link {
   color: var(--brand-dark);

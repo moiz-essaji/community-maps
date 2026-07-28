@@ -1,0 +1,15 @@
+name = "community-maps-submit"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+# The repository that receives submission issues.
+GITHUB_REPO = "moiz-essaji/community-maps"
+
+# Only these sites may post submissions. Comma-separated, no trailing slash.
+# Add http://localhost:4173 while testing locally.
+ALLOWED_ORIGINS = "https://moiz-essaji.github.io"
+
+# Secrets are NOT set here — they would end up in git. Set them once with:
+#   wrangler secret put GITHUB_TOKEN
+#   wrangler secret put TURNSTILE_SECRET

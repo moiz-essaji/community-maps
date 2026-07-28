@@ -1,0 +1,16 @@
+{
+  "name": "community-maps-submit-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Files website submissions as GitHub issues so visitors don't need a GitHub account.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node test/worker.test.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

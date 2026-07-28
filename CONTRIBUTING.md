@@ -1,19 +1,24 @@
 # Contributing to Bohra Masjid Finder
 
 Jazakallah for helping keep the map accurate! There are two ways to contribute —
-no coding knowledge is required for the first.
+the first needs no coding knowledge and no account of any kind.
 
-## 1. Via the website (easiest)
+## 1. Via the website (easiest — no account needed)
 
-- **Add a missing masjid:** click **“＋ Add a masjid”** in the site header. A
-  GitHub form opens — fill in the name, city, and coordinates (long-press the
-  spot in Google Maps to copy them) and submit. You only need a free GitHub
-  account.
+- **Add a missing masjid:** click **“＋ Add a masjid”** in the site header. Fill
+  in the name, city and state, then set the exact location with **“🗺 Pick on
+  map”** (or **“📍 Use my location”** if you're standing there). Submit — that's it.
 - **Report wrong info:** click **“⚠ Report”** on any masjid in the list or its
-  map popup. The form is pre-filled with that masjid's ID.
+  map popup, choose what's wrong, and add any detail that helps us fix it.
 
-The maintainer reviews every submission, verifies the location, and updates the
-map. You'll be notified on your issue when it's live.
+Leaving your name or email is optional and only used to thank you or ask a
+follow-up question.
+
+The maintainer reviews every submission and verifies the location before it
+appears on the map.
+
+> If the site's owner hasn't set up the submission worker yet, these buttons open
+> a pre-filled GitHub issue form instead — which does need a free GitHub account.
 
 ## 2. Via pull request (for the git-comfortable)
 

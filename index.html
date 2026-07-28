@@ -50,6 +50,104 @@
     </main>
   </div>
 
+  <div id="form-overlay" class="modal-overlay" hidden>
+    <div class="modal modal-form" role="dialog" aria-modal="true" aria-labelledby="form-title">
+      <div class="modal-head">
+        <h2 id="form-title">Add a masjid</h2>
+        <button type="button" class="modal-x" id="form-close" aria-label="Close">✕</button>
+      </div>
+
+      <form id="submission-form" novalidate>
+        <p class="form-intro" id="form-intro"></p>
+
+        <!-- Add-a-masjid fields -->
+        <div class="field-group" data-for="add">
+          <label for="f-name">Masjid name <span class="req">*</span></label>
+          <input id="f-name" name="name" type="text" maxlength="120" placeholder="e.g. Saifee Masjid" />
+
+          <label for="f-locality">Locality / area</label>
+          <input id="f-locality" name="locality" type="text" maxlength="120" placeholder="e.g. Bhendi Bazaar" />
+
+          <div class="field-row">
+            <div>
+              <label for="f-city">City <span class="req">*</span></label>
+              <input id="f-city" name="city" type="text" maxlength="80" placeholder="e.g. Mumbai" />
+            </div>
+            <div>
+              <label for="f-state">State <span class="req">*</span></label>
+              <input id="f-state" name="state" type="text" maxlength="80" placeholder="e.g. Maharashtra" />
+            </div>
+          </div>
+
+          <label>Location <span class="req">*</span></label>
+          <p class="field-help">Pick the spot on the map, or use your current location if you're standing there.</p>
+          <div class="field-row location-row">
+            <input id="f-lat" name="lat" type="text" inputmode="decimal" placeholder="Latitude" readonly />
+            <input id="f-lng" name="lng" type="text" inputmode="decimal" placeholder="Longitude" readonly />
+          </div>
+          <div class="field-actions">
+            <button type="button" class="btn btn-small" id="pick-on-map">🗺 Pick on map</button>
+            <button type="button" class="btn btn-small" id="use-my-location">📍 Use my location</button>
+          </div>
+
+          <label for="f-gmaps">Google Maps link (optional)</label>
+          <input id="f-gmaps" name="gmapsLink" type="url" maxlength="500" placeholder="https://maps.app.goo.gl/…" />
+        </div>
+
+        <!-- Report-an-issue fields -->
+        <div class="field-group" data-for="report" hidden>
+          <div class="reported-masjid" id="reported-masjid"></div>
+
+          <label for="f-problem">What's wrong? <span class="req">*</span></label>
+          <select id="f-problem" name="problem">
+            <option value="">Choose one…</option>
+            <option value="Wrong location">The pin is in the wrong place</option>
+            <option value="Wrong name or details">The name or details are wrong</option>
+            <option value="Permanently closed">This masjid no longer exists here</option>
+            <option value="Duplicate">It's listed twice</option>
+            <option value="Other">Something else</option>
+          </select>
+        </div>
+
+        <!-- Shared fields -->
+        <label for="f-details" id="details-label">Details</label>
+        <textarea id="f-details" name="details" rows="3" maxlength="1500"
+                  placeholder="Anything that helps us verify — landmarks, the correct address, how you know."></textarea>
+
+        <label for="f-contact">Your name or email (optional)</label>
+        <input id="f-contact" name="contact" type="text" maxlength="120"
+               placeholder="So we can thank you or ask a follow-up" />
+
+        <div id="turnstile-holder"></div>
+
+        <p class="form-error" id="form-error" hidden></p>
+
+        <div class="modal-actions form-actions">
+          <button type="button" class="btn btn-ghost-dark" id="form-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
+        </div>
+        <p class="form-foot">
+          Submissions are reviewed before they appear on the map. Prefer git?
+          <a id="form-github-link" target="_blank" rel="noopener">Open an issue on GitHub</a> instead.
+        </p>
+      </form>
+
+      <div class="form-success" id="form-success" hidden>
+        <div class="success-icon">✅</div>
+        <h3>Thank you!</h3>
+        <p id="success-text"></p>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-primary" id="success-close">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pick-banner" class="pick-banner" hidden>
+    <span>Tap the masjid's exact location on the map</span>
+    <button type="button" class="btn btn-small" id="pick-cancel">Cancel</button>
+  </div>
+
   <div id="disclaimer-overlay" class="modal-overlay" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
       <h2 id="disclaimer-title">Disclaimer</h2>
@@ -74,5 +172,6 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="js/config.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/forms.js"></script>
 </body>
 </html>

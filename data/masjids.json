@@ -1,0 +1,138 @@
+{
+  "lastUpdated": "2026-07-28",
+  "notice": "Seed dataset. Every entry below is APPROXIMATE and unverified — coordinates point to the known Bohra locality, not necessarily the exact building. Community contributions to verify/correct these are welcome.",
+  "masjids": [
+    {
+      "id": "mumbai-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "Bhendi Bazaar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "lat": 18.9578,
+      "lng": 72.8321,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
+    },
+    {
+      "id": "surat-jamea-masjid",
+      "name": "Jamea Masjid (Saifee Masjid)",
+      "locality": "Zampa Bazaar",
+      "city": "Surat",
+      "state": "Gujarat",
+      "lat": 21.1959,
+      "lng": 72.8302,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Zampa Bazaar Surat"
+    },
+    {
+      "id": "ahmedabad-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "Vohrawad, Kalupur",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "lat": 23.03,
+      "lng": 72.59,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Kalupur Ahmedabad"
+    },
+    {
+      "id": "sidhpur-bohrwad-masjid",
+      "name": "Bohrwad Masjid",
+      "locality": "Bohrwad",
+      "city": "Sidhpur",
+      "state": "Gujarat",
+      "lat": 23.917,
+      "lng": 72.373,
+      "verified": false,
+      "googleMapsQuery": "Bohrwad Masjid Sidhpur"
+    },
+    {
+      "id": "udaipur-bohrawadi-masjid",
+      "name": "Masjid-e-Saifee",
+      "locality": "Bohrawadi",
+      "city": "Udaipur",
+      "state": "Rajasthan",
+      "lat": 24.579,
+      "lng": 73.688,
+      "verified": false,
+      "googleMapsQuery": "Bohra Masjid Bohrawadi Udaipur"
+    },
+    {
+      "id": "indore-saifee-nagar-masjid",
+      "name": "Saifee Nagar Masjid",
+      "locality": "Saifee Nagar",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "lat": 22.71,
+      "lng": 75.86,
+      "verified": false,
+      "googleMapsQuery": "Saifee Nagar Masjid Indore"
+    },
+    {
+      "id": "ujjain-bohra-masjid",
+      "name": "Bohra Masjid",
+      "locality": "Bohra Bakhal",
+      "city": "Ujjain",
+      "state": "Madhya Pradesh",
+      "lat": 23.183,
+      "lng": 75.777,
+      "verified": false,
+      "googleMapsQuery": "Bohra Masjid Ujjain"
+    },
+    {
+      "id": "pune-burhani-masjid",
+      "name": "Burhani Masjid",
+      "locality": "Pune Camp",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "lat": 18.515,
+      "lng": 73.879,
+      "verified": false,
+      "googleMapsQuery": "Bohra Masjid Pune Camp"
+    },
+    {
+      "id": "kolkata-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "Central Kolkata",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "lat": 22.575,
+      "lng": 88.36,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Kolkata"
+    },
+    {
+      "id": "chennai-bohra-masjid",
+      "name": "Bohra Masjid",
+      "locality": "George Town",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "lat": 13.085,
+      "lng": 80.275,
+      "verified": false,
+      "googleMapsQuery": "Bohra Masjid George Town Chennai"
+    },
+    {
+      "id": "hyderabad-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "Old City",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.385,
+      "lng": 78.474,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Hyderabad"
+    },
+    {
+      "id": "bengaluru-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "Shivajinagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.985,
+      "lng": 77.605,
+      "verified": false,
+      "googleMapsQuery": "Bohra Masjid Shivajinagar Bengaluru"
+    }
+  ]
+}

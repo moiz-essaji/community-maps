@@ -1,0 +1,31 @@
+name: "⚠️ Report incorrect information"
+description: "Report a wrong location, name, or other detail for a masjid on the map"
+title: "[Report] "
+labels: ["data-correction", "needs-review"]
+body:
+  - type: input
+    id: masjid-id
+    attributes:
+      label: Masjid ID
+      description: "Pre-filled if you clicked Report from the map — otherwise the masjid's name and city"
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What's wrong?
+      options:
+        - Location / pin is in the wrong place
+        - Name is incorrect
+        - Masjid no longer exists / has moved
+        - Duplicate entry
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correct information
+      placeholder: "e.g. The correct coordinates are 18.9581, 72.8318 — pin currently points to the wrong lane."
+    validations:
+      required: true

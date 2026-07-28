@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bohra Masjid Finder — Dawoodi Bohra Masjids across India</title>
+  <meta name="description" content="Community-maintained map of Dawoodi Bohra masjids across India. Find the nearest masjid and navigate with Google Maps." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕌</text></svg>" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🕌</span>
+      <div class="brand-text">
+        <h1>Bohra Masjid Finder</h1>
+        <p>Dawoodi Bohra masjids across India</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a id="add-masjid-link" class="btn btn-primary" target="_blank" rel="noopener">＋ Add a masjid</a>
+      <a id="github-link" class="btn btn-ghost" target="_blank" rel="noopener" title="View source on GitHub">GitHub</a>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <aside class="sidebar" id="sidebar">
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Search by masjid, city or state…"
+               autocomplete="off" aria-label="Search masjids" />
+      </div>
+      <div class="sidebar-meta">
+        <span id="result-count"></span>
+        <button id="locate-btn" class="btn btn-small" title="Find masjids near me">📍 Near me</button>
+      </div>
+      <ul id="masjid-list" class="masjid-list" aria-label="Masjid results"></ul>
+      <footer class="sidebar-footer">
+        <p>Community-maintained open data. Spotted an error?
+           Use “Report” on any masjid. <a id="contribute-link" target="_blank" rel="noopener">How to contribute</a></p>
+        <p class="footer-disclaimer">Base map, boundaries and borders come from public sources —
+           <button type="button" class="link-button js-open-disclaimer">read the disclaimer</button>.</p>
+      </footer>
+    </aside>
+
+    <main class="map-wrap">
+      <div id="map" role="application" aria-label="Map of Bohra masjids"></div>
+      <button id="toggle-list" class="btn btn-toggle" aria-controls="sidebar">☰ List</button>
+    </main>
+  </div>
+
+  <div id="disclaimer-overlay" class="modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+      <h2 id="disclaimer-title">Disclaimer</h2>
+      <p><strong>Map imagery, boundaries and borders are not ours.</strong> The base map on this
+         site is supplied by <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+         and other public sources. All international, national and state borders, along with place
+         names and territorial depictions, are rendered exactly as those public sources provide them.</p>
+      <p>The developer and contributors of this project <strong>have no control over how any border
+         or boundary is depicted</strong>, do not edit or endorse those depictions, and intend no
+         political statement by them. Nothing shown here is authoritative. For official boundaries
+         of India, refer to the Survey of India.</p>
+      <p>Masjid locations are contributed by the community and offered in good faith. Entries marked
+         <span class="badge badge-unverified">Unverified</span> are approximate and awaiting
+         confirmation — please verify before travelling.</p>
+      <div class="modal-actions">
+        <button type="button" id="disclaimer-close" class="btn btn-primary">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

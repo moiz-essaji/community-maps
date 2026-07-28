@@ -1,0 +1,55 @@
+name: "➕ Add a masjid"
+description: "Suggest a Dawoodi Bohra masjid that's missing from the map"
+title: "[Add] New masjid: "
+labels: ["new-masjid", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing! Fill in what you know — the maintainer will
+        verify the details before the masjid appears on the map.
+  - type: input
+    id: masjid-name
+    attributes:
+      label: Masjid name
+      placeholder: "e.g. Saifee Masjid"
+    validations:
+      required: true
+  - type: input
+    id: locality
+    attributes:
+      label: Locality / area
+      placeholder: "e.g. Bhendi Bazaar"
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: "e.g. Mumbai"
+    validations:
+      required: true
+  - type: input
+    id: state
+    attributes:
+      label: State
+      placeholder: "e.g. Maharashtra"
+    validations:
+      required: true
+  - type: input
+    id: coordinates
+    attributes:
+      label: Coordinates (latitude, longitude)
+      description: "In Google Maps, long-press the masjid location and copy the numbers shown, e.g. 18.9578, 72.8321"
+      placeholder: "18.9578, 72.8321"
+    validations:
+      required: true
+  - type: input
+    id: gmaps-link
+    attributes:
+      label: Google Maps link (optional)
+      description: "If the masjid is already listed on Google Maps, paste its share link"
+      placeholder: "https://maps.app.goo.gl/..."
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      placeholder: "Landmarks nearby, alternate names, how you verified the location…"

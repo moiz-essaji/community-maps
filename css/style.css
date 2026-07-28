@@ -1,0 +1,265 @@
+:root {
+  --brand: #1a6b4a;
+  --brand-dark: #124d35;
+  --accent: #c9a227;
+  --bg: #f6f7f6;
+  --surface: #ffffff;
+  --text: #1c2321;
+  --text-muted: #5b6663;
+  --border: #e0e5e3;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  --header-h: 64px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+
+.app-header {
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px;
+  background: var(--brand);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.brand-icon { font-size: 28px; }
+.brand-text h1 { margin: 0; font-size: 17px; line-height: 1.2; white-space: nowrap; }
+.brand-text p { margin: 0; font-size: 12px; opacity: 0.85; white-space: nowrap; }
+
+.header-actions { display: flex; gap: 8px; }
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary { background: var(--accent); color: #2b230a; }
+.btn-primary:hover { filter: brightness(1.05); }
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.24); }
+
+.btn-small {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+}
+.btn-small:hover { border-color: var(--brand); color: var(--brand); }
+
+/* ---------- Layout ---------- */
+
+.app-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.sidebar {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  min-height: 0;
+}
+
+.map-wrap { flex: 1; position: relative; min-width: 0; }
+#map { position: absolute; inset: 0; }
+
+/* ---------- Sidebar ---------- */
+
+.search-box { padding: 12px; border-bottom: 1px solid var(--border); }
+
+#search-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+}
+#search-input:focus { border-color: var(--brand); }
+
+.sidebar-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.masjid-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.masjid-item {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.masjid-item:hover, .masjid-item.active { background: #eef4f1; }
+
+.masjid-item h3 { margin: 0 0 2px; font-size: 15px; }
+.masjid-item .locality { margin: 0; font-size: 13px; color: var(--text-muted); }
+.masjid-item .distance { font-size: 12px; color: var(--brand); font-weight: 600; }
+
+.item-actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+.badge-unverified { background: #fdf1d6; color: #8a6d1a; }
+.badge-verified { background: #def2e6; color: var(--brand-dark); }
+
+.empty-state { padding: 24px 16px; color: var(--text-muted); font-size: 14px; text-align: center; }
+
+.sidebar-footer {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+.sidebar-footer p { margin: 0; }
+.sidebar-footer a { color: var(--brand); }
+.footer-disclaimer { margin-top: 6px !important; padding-top: 6px; border-top: 1px solid var(--border); }
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--brand);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ---------- Disclaimer modal ---------- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.45);
+}
+.modal-overlay[hidden] { display: none; }
+
+.modal {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 20px 22px;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal h2 { margin: 0 0 12px; font-size: 18px; color: var(--brand-dark); }
+.modal p { margin: 0 0 12px; color: var(--text); }
+.modal a { color: var(--brand); }
+.modal-actions { display: flex; justify-content: flex-end; }
+
+/* Disclaimer link inside the Leaflet attribution bar */
+.leaflet-control-attribution .disclaimer-link {
+  color: var(--brand-dark);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ---------- Popup ---------- */
+
+.popup-body { font-size: 13px; min-width: 200px; }
+.popup-body h3 { margin: 0 0 4px; font-size: 15px; }
+.popup-body p { margin: 0 0 8px; color: var(--text-muted); }
+.popup-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.popup-actions .btn-small { text-decoration: none; }
+
+/* ---------- Mobile ---------- */
+
+.btn-toggle {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  background: var(--brand);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 720px) {
+  .brand-text p { display: none; }
+  .brand-text h1 { font-size: 15px; }
+  .btn { padding: 7px 10px; font-size: 13px; }
+
+  .app-body { position: relative; }
+
+  .sidebar {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 1500;
+    display: none;
+  }
+  .sidebar.open { display: flex; }
+
+  /* Sits above the attribution bar so the disclaimer link stays readable. */
+  .btn-toggle { display: inline-flex; bottom: 52px; }
+}

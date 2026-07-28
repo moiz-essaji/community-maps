@@ -15,7 +15,7 @@ window.BMAPS_CONFIG = {
    * Leave this empty and the site still works: the Add / Report buttons fall
    * back to opening a pre-filled GitHub issue form instead.
    */
-  SUBMIT_ENDPOINT: "",
+  SUBMIT_ENDPOINT: "https://community-maps-submit.community-maps-submit.workers.dev",
 
   /**
    * Cloudflare Turnstile site key (spam protection). Optional but recommended

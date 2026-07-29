@@ -124,6 +124,17 @@
       "googleMapsQuery": "Saifee Masjid Hyderabad"
     },
     {
+      "id": "wardha-najmi-masjid",
+      "name": "Najmi Masjid",
+      "locality": "Mahadeopura",
+      "city": "Wardha",
+      "state": "Maharashtra",
+      "lat": 20.739797,
+      "lng": 78.603747,
+      "verified": true,
+      "googleMapsQuery": "Najmi Masjid Mahadeopura Wardha"
+    },
+    {
       "id": "bengaluru-saifee-masjid",
       "name": "Saifee Masjid",
       "locality": "Shivajinagar",

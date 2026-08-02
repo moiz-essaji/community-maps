@@ -14,6 +14,17 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
+      "id": "nagpur-hakimi-masjid",
+      "name": "Hakimi Masjid",
+      "locality": "Shanti Nagar",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "lat": 21.1590734,
+      "lng": 79.1219218,
+      "verified": true,
+      "googleMapsQuery": "Hakimi Masjid Shanti Nagar Nagpur"
+    },
+    {
       "id": "hyderabad-mohammadi-dawoodi-bohra-masjid",
       "name": "Mohammadi - Dawoodi Bohra Masjid",
       "locality": "Red Hills, Lakdikapul",
@@ -21,7 +32,7 @@
       "state": "Telangana",
       "lat": 17.398251,
       "lng": 78.46347,
-      "verified": false,
+      "verified": true,
       "googleMapsQuery": "Mohammadi - Dawoodi Bohra Masjid Red Hills, Lakdikapul Hyderabad"
     },
     {

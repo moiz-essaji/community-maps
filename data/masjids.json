@@ -14,6 +14,28 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
+      "id": "nagpur-hakimi-masjid",
+      "name": "Hakimi Masjid",
+      "locality": "Shanti Nagar",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "lat": 21.1590734,
+      "lng": 79.1219218,
+      "verified": true,
+      "googleMapsQuery": "Hakimi Masjid Shanti Nagar Nagpur"
+    },
+    {
+      "id": "hyderabad-mohammadi-dawoodi-bohra-masjid",
+      "name": "Mohammadi - Dawoodi Bohra Masjid",
+      "locality": "Red Hills, Lakdikapul",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.398251,
+      "lng": 78.46347,
+      "verified": true,
+      "googleMapsQuery": "Mohammadi - Dawoodi Bohra Masjid Red Hills, Lakdikapul Hyderabad"
+    },
+    {
       "id": "surat-jamea-masjid",
       "name": "Jamea Masjid (Saifee Masjid)",
       "locality": "Zampa Bazaar",
@@ -122,6 +144,17 @@
       "lng": 78.474,
       "verified": false,
       "googleMapsQuery": "Saifee Masjid Hyderabad"
+    },
+    {
+      "id": "wardha-najmi-masjid",
+      "name": "Najmi Masjid",
+      "locality": "Mahadeopura",
+      "city": "Wardha",
+      "state": "Maharashtra",
+      "lat": 20.739797,
+      "lng": 78.603747,
+      "verified": true,
+      "googleMapsQuery": "Najmi Masjid Mahadeopura Wardha"
     },
     {
       "id": "bengaluru-saifee-masjid",

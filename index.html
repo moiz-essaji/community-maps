@@ -80,18 +80,29 @@
           </div>
 
           <label>Location <span class="req">*</span></label>
-          <p class="field-help">Pick the spot on the map, or use your current location if you're standing there.</p>
-          <div class="field-row location-row">
-            <input id="f-lat" name="lat" type="text" inputmode="decimal" placeholder="Latitude" readonly />
-            <input id="f-lng" name="lng" type="text" inputmode="decimal" placeholder="Longitude" readonly />
-          </div>
+          <p class="field-help">Any one of these is enough — search the map, paste a link, or type the numbers.</p>
+
           <div class="field-actions">
-            <button type="button" class="btn btn-small" id="pick-on-map">🗺 Pick on map</button>
-            <button type="button" class="btn btn-small" id="use-my-location">📍 Use my location</button>
+            <button type="button" class="btn btn-small" id="pick-on-map">🔍 Search &amp; pick on map</button>
+            <button type="button" class="btn btn-small" id="use-my-location">📍 I'm here now</button>
           </div>
 
+          <div class="field-row location-row">
+            <div>
+              <label for="f-lat" class="sub-label">Latitude</label>
+              <input id="f-lat" name="lat" type="text" inputmode="decimal" placeholder="e.g. 18.957800" />
+            </div>
+            <div>
+              <label for="f-lng" class="sub-label">Longitude</label>
+              <input id="f-lng" name="lng" type="text" inputmode="decimal" placeholder="e.g. 72.832100" />
+            </div>
+          </div>
+          <p class="loc-status" id="loc-status" hidden></p>
+
           <label for="f-gmaps">Google Maps link (optional)</label>
-          <input id="f-gmaps" name="gmapsLink" type="url" maxlength="500" placeholder="https://maps.app.goo.gl/…" />
+          <input id="f-gmaps" name="gmapsLink" type="text" maxlength="500" autocomplete="off"
+                 placeholder="https://www.google.com/maps/place/…   or   18.9578, 72.8321" />
+          <p class="loc-feedback" id="loc-feedback" hidden></p>
         </div>
 
         <!-- Report-an-issue fields -->
@@ -144,8 +155,20 @@
   </div>
 
   <div id="pick-banner" class="pick-banner" hidden>
-    <span>Tap the masjid's exact location on the map</span>
-    <button type="button" class="btn btn-small" id="pick-cancel">Cancel</button>
+    <div class="pick-row">
+      <form id="pick-search-form" class="pick-search" role="search">
+        <input id="pick-search-input" type="search" autocomplete="off"
+               placeholder="City name, plus pincode if you know it" aria-label="Search by city or pincode" />
+        <button type="submit" class="btn btn-small" id="pick-search-btn">Search</button>
+      </form>
+      <button type="button" class="btn btn-small btn-ghost-dark" id="pick-cancel">Cancel</button>
+    </div>
+    <ul id="pick-results" class="pick-results" hidden></ul>
+    <p class="pick-hint" id="pick-hint">Search a city or pincode to jump there, then zoom in and tap the masjid's exact spot.</p>
+    <div class="pick-confirm" id="pick-confirm" hidden>
+      <span id="pick-coords" class="pick-coords"></span>
+      <button type="button" class="btn btn-primary btn-small" id="pick-use">Use this location</button>
+    </div>
   </div>
 
   <div id="disclaimer-overlay" class="modal-overlay" hidden>
@@ -171,6 +194,7 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="js/config.js"></script>
+  <script src="js/geo.js"></script>
   <script src="js/app.js"></script>
   <script src="js/forms.js"></script>
 </body>

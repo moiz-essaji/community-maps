@@ -6,8 +6,18 @@ the first needs no coding knowledge and no account of any kind.
 ## 1. Via the website (easiest — no account needed)
 
 - **Add a missing masjid:** click **“＋ Add a masjid”** in the site header. Fill
-  in the name, city and state, then set the exact location with **“🗺 Pick on
-  map”** (or **“📍 Use my location”** if you're standing there). Submit — that's it.
+  in the name, city and state, then set the location in whichever way is easiest:
+  - **🔍 Search & pick on map** — search by **city name, plus the pincode** if
+    you know it, to jump to the right place, then zoom in and tap the masjid.
+    Drag the pin to fine-tune it. (Search area and landmark names are unreliable
+    in OpenStreetMap's Indian data, so city/pincode gets you there far more
+    dependably.)
+  - **Google Maps link** — optional, but if you paste one we'll read the
+    coordinates straight out of it. You can also paste bare coordinates here.
+    For a shortened `maps.app.goo.gl` link, tap it to open Google Maps,
+    long-press the masjid, then copy the coordinates it shows and paste those.
+  - **📍 I'm here now** — uses your device location if you're standing there.
+  - **Type latitude and longitude** directly, if you already know them.
 - **Report wrong info:** click **“⚠ Report”** on any masjid in the list or its
   map popup, choose what's wrong, and add any detail that helps us fix it.
 

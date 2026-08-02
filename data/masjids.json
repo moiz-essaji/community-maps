@@ -14,6 +14,17 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
+      "id": "hyderabad-mohammadi-dawoodi-bohra-masjid",
+      "name": "Mohammadi - Dawoodi Bohra Masjid",
+      "locality": "Red Hills, Lakdikapul",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.398251,
+      "lng": 78.46347,
+      "verified": false,
+      "googleMapsQuery": "Mohammadi - Dawoodi Bohra Masjid Red Hills, Lakdikapul Hyderabad"
+    },
+    {
       "id": "surat-jamea-masjid",
       "name": "Jamea Masjid (Saifee Masjid)",
       "locality": "Zampa Bazaar",

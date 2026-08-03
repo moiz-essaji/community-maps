@@ -25,26 +25,26 @@
       "googleMapsQuery": "Saifee Masjid Bohra Baakhal Ratlam"
     },
     {
-    "id": "bengaluru-mohammedi-masjid",
-    "name": "Mohammedi Masjid",
-    "locality": "J. P. Nagar",
-    "city": "Bengaluru",
-    "state": "Karnataka",
-    "lat": 12.901776,
-    "lng": 77.589433,
-    "verified": true,
-    "googleMapsQuery": "Mohammedi Masjid J. P. Nagar Bengaluru"
+      "id": "bengaluru-mohammedi-masjid",
+      "name": "Mohammedi Masjid",
+      "locality": "J. P. Nagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.901776,
+      "lng": 77.589433,
+      "verified": true,
+      "googleMapsQuery": "Mohammedi Masjid J. P. Nagar Bengaluru"
     },
     {
-    "id": "yavatmal-ezzy-masjid",
-    "name": "Ezzy Masjid",
-    "locality": "",
-    "city": "Yavatmal",
-    "state": "Maharashtra",
-    "lat": 20.391743,
-    "lng": 78.133189,
-    "verified": true,
-    "googleMapsQuery": "Ezzy Masjid Yavatmal"
+      "id": "yavatmal-ezzy-masjid",
+      "name": "Ezzy Masjid",
+      "locality": "",
+      "city": "Yavatmal",
+      "state": "Maharashtra",
+      "lat": 20.391743,
+      "lng": 78.133189,
+      "verified": true,
+      "googleMapsQuery": "Ezzy Masjid Yavatmal"
     },
     {
       "id": "nagpur-hakimi-masjid",

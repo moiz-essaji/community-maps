@@ -4,13 +4,13 @@
   "masjids": [
     {
       "id": "mumbai-saifee-masjid",
-      "name": "Saifee Masjid",
+      "name": "Gurratul Masajid",
       "locality": "Bhendi Bazaar",
       "city": "Mumbai",
       "state": "Maharashtra",
-      "lat": 18.9578,
-      "lng": 72.8321,
-      "verified": false,
+      "lat": 18.9589053,
+      "lng": 72.8303053,
+      "verified": true,
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
@@ -43,7 +43,7 @@
     "state": "Maharashtra",
     "lat": 20.391743,
     "lng": 78.133189,
-    "verified": false,
+    "verified": true,
     "googleMapsQuery": "Ezzy Masjid Yavatmal"
     },
     {
@@ -157,15 +157,15 @@
       "googleMapsQuery": "Saifee Masjid Kolkata"
     },
     {
-      "id": "chennai-bohra-masjid",
-      "name": "Bohra Masjid",
+      "id": "chennai-saifee-masjid",
+      "name": "Saifee Masjid",
       "locality": "George Town",
       "city": "Chennai",
       "state": "Tamil Nadu",
-      "lat": 13.085,
-      "lng": 80.275,
-      "verified": false,
-      "googleMapsQuery": "Bohra Masjid George Town Chennai"
+      "lat": 13.0917132,
+      "lng": 80.2900638,
+      "verified": true,
+      "googleMapsQuery": "Saifee Masjid George Town Chennai"
     },
     {
       "id": "secunderabad-saifee-masjid",

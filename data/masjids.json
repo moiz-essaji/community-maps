@@ -118,9 +118,9 @@
       "locality": "Saifee Nagar",
       "city": "Indore",
       "state": "Madhya Pradesh",
-      "lat": 22.71,
-      "lng": 75.86,
-      "verified": false,
+      "lat": 22.6962529,
+      "lng": 75.8554723,
+      "verified": true,
       "googleMapsQuery": "Saifee Nagar Masjid Indore"
     },
     {
@@ -168,15 +168,15 @@
       "googleMapsQuery": "Bohra Masjid George Town Chennai"
     },
     {
-      "id": "hyderabad-saifee-masjid",
+      "id": "secunderabad-saifee-masjid",
       "name": "Saifee Masjid",
       "locality": "Old City",
-      "city": "Hyderabad",
+      "city": "Secunderabad",
       "state": "Telangana",
-      "lat": 17.385,
-      "lng": 78.474,
-      "verified": false,
-      "googleMapsQuery": "Saifee Masjid Hyderabad"
+      "lat": 17.4758595,
+      "lng": 78.4956619,
+      "verified": true,
+      "googleMapsQuery": "Saifee Masjid Secunderabad"
     },
     {
       "id": "wardha-najmi-masjid",

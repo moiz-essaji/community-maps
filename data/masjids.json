@@ -69,15 +69,15 @@
       "googleMapsQuery": "Mohammadi - Dawoodi Bohra Masjid Red Hills, Lakdikapul Hyderabad"
     },
     {
-      "id": "surat-jamea-masjid",
-      "name": "Jamea Masjid (Saifee Masjid)",
+      "id": "surat-moazaam-masjid",
+      "name": "Al-Masjid Al-Moazzam",
       "locality": "Zampa Bazaar",
       "city": "Surat",
       "state": "Gujarat",
-      "lat": 21.1959,
-      "lng": 72.8302,
-      "verified": false,
-      "googleMapsQuery": "Saifee Masjid Zampa Bazaar Surat"
+      "lat": 21.194604,
+      "lng": 72.8317892,
+      "verified": true,
+      "googleMapsQuery": "Al-Masjid Al-Moazzam Zampa Bazaar Surat"
     },
     {
       "id": "ahmedabad-saifee-masjid",

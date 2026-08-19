@@ -14,6 +14,105 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
+      "id": "nagpur-burhani-masjid",
+      "name": "Burhani Masjid",
+      "locality": "Sadar",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "lat": 21.161873,
+      "lng": 79.073695,
+      "verified": true,
+      "googleMapsQuery": "Burhani Masjid Sadar Nagpur"
+    },
+    {
+      "id": "rajkot-qutbi-masjid",
+      "name": "Qutbi Masjid",
+      "locality": "",
+      "city": "Rajkot",
+      "state": "Gujarat",
+      "lat": 22.30148,
+      "lng": 70.811321,
+      "verified": false,
+      "googleMapsQuery": "Qutbi Masjid Rajkot"
+    },
+    {
+      "id": "rajkot-noor-masjid",
+      "name": "Noor Masjid",
+      "locality": "",
+      "city": "Rajkot",
+      "state": "Gujarat",
+      "lat": 22.299249,
+      "lng": 70.806538,
+      "verified": false,
+      "googleMapsQuery": "Noor Masjid Rajkot"
+    },
+    {
+      "id": "raipur-hasani-masjid",
+      "name": "Hasani Masjid",
+      "locality": "Amanaka",
+      "city": "Raipur",
+      "state": "Chattisgarh",
+      "lat": 21.251953,
+      "lng": 81.593392,
+      "verified": true,
+      "googleMapsQuery": "Hasani Masjid Amanaka Raipur"
+    },
+    {
+      "id": "raipur-noor-masjid",
+      "name": "Noor Masjid",
+      "locality": "",
+      "city": "Raipur",
+      "state": "Chhattisgarh",
+      "lat": 21.238766,
+      "lng": 81.633484,
+      "verified": true,
+      "googleMapsQuery": "Noor Masjid Raipur"
+    },
+    {
+      "id": "kota-saifee-masjid",
+      "name": "Saifee Masjid",
+      "locality": "",
+      "city": "Kota",
+      "state": "Rajastha",
+      "lat": 25.1763,
+      "lng": 75.832024,
+      "verified": false,
+      "googleMapsQuery": "Saifee Masjid Kota"
+    },
+    {
+      "id": "udaipur-burhani-masjid",
+      "name": "Burhani Masjid",
+      "locality": "",
+      "city": "Udaipur",
+      "state": "Rajasthan",
+      "lat": 24.612524,
+      "lng": 73.682902,
+      "verified": true,
+      "googleMapsQuery": "Burhani Masjid Udaipur"
+    },
+    {
+      "id": "kochi-al-masjid-al-badri",
+      "name": "Al Masjid al Badri",
+      "locality": "",
+      "city": "Kochi",
+      "state": "Kerala",
+      "lat": 9.931089,
+      "lng": 76.266561,
+      "verified": true,
+      "googleMapsQuery": "Al Masjid al Badri Kochi"
+    },
+    {
+      "id": "mubarakpur-masjid",
+      "name": "Masjid",
+      "locality": "",
+      "city": "Mubarakpur",
+      "state": "Uttar Pradesh",
+      "lat": 26.089713,
+      "lng": 83.28936,
+      "verified": false,
+      "googleMapsQuery": "Masjid Mubarakpur"
+    },
+    {
       "id": "ratlam-saifee-masjid",
       "name": "Saifee Masjid",
       "locality": "Bohra Baakhal",

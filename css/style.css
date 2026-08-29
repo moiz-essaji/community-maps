@@ -275,34 +275,6 @@ body {
   background: #edf0ea;
 }
 
-.info-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  padding: 0 20px 20px;
-  flex-shrink: 0;
-}
-
-.info-card { display: flex; flex-direction: column; }
-
-.info-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 11px;
-  padding: 16px 20px;
-}
-.info-body-center { align-items: center; text-align: center; }
-.info-body p {
-  margin: 0;
-  font-size: 13.5px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #4a555f;
-}
-.info-body .btn-primary { padding: 11px 32px; font-size: 14.5px; }
-
 /* ---------- Sidebar ---------- */
 
 .search-box { padding: 14px 16px 10px; }
@@ -845,10 +817,8 @@ body {
   }
   .sidebar.open { display: flex; }
 
-  /* Extra bottom room so the floating List/Map button never covers a card. */
-  .info-row { grid-template-columns: minmax(0, 1fr); padding: 0 12px 78px; gap: 12px; }
-
-  .btn-toggle { display: inline-flex; bottom: 16px; }
+  /* Sits above the map's attribution strip so the disclaimer link stays legible. */
+  .btn-toggle { display: inline-flex; bottom: 56px; }
 
   .card-head { min-height: 46px; padding: 0 14px; }
   .card-head h2 { font-size: 13px; letter-spacing: 2.2px; }

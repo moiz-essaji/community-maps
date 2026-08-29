@@ -26,7 +26,6 @@
 
   document.getElementById("add-masjid-link").href = addMasjidUrl();
   document.getElementById("add-masjid-link").classList.add("js-add");
-  document.getElementById("contribute-cta").href = addMasjidUrl();
   document.getElementById("github-link").href = repoUrl;
   document.getElementById("contribute-link").href = `${repoUrl}/blob/main/CONTRIBUTING.md`;
   document.getElementById("form-github-link").href = addMasjidUrl();
@@ -36,15 +35,6 @@
   // the repository's report form.
   document.getElementById("nav-report").href =
     `${repoUrl}/issues/new?template=report-issue.yml`;
-
-  document.getElementById("nav-find").addEventListener("click", () => {
-    if (isMobile()) {
-      sidebarEl.classList.add("open");
-      toggleBtn.textContent = "🗺 Map";
-    }
-    searchEl.focus();
-    searchEl.select();
-  });
 
   // ---------- Map ----------
 

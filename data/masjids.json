@@ -14,17 +14,6 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
-      "id": "galiakot-fakhri-masjid",
-      "name": "Fakhri Masjid",
-      "locality": "",
-      "city": "Galiakot",
-      "state": "Rajasthan",
-      "lat": 23.545186,
-      "lng": 74.003283,
-      "verified": true,
-      "googleMapsQuery": "Fakhri Masjid Galiakot"
-    },
-    {
       "id": "bilaspu-masjid",
       "name": "Burhani Masjid",
       "locality": "",

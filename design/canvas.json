@@ -1,0 +1,24 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 980, "title": "Home — map & directory" },
+    { "file": "AddMasjid.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 980, "title": "Add a masjid" },
+    { "file": "Mobile.dc.html", "x": 3120, "y": 0, "w": 390, "h": 844, "title": "Mobile" }
+  ],
+  "annotations": [
+    {
+      "id": "brief",
+      "x": 0,
+      "y": -190,
+      "w": 520,
+      "text": "Bohra Masjid Finder — restyled to the community portal template.\n\nNavy #0E2B49 bar and card header strips, gold #E8C061 uppercase headings with an arabesque watermark, cream #FAF7EC ground, white cards with soft shadows.\n\nMasjid entries are real, from data/masjids.json. Mockup only — no code changed."
+    },
+    {
+      "id": "note-mobile",
+      "x": 3120,
+      "y": -190,
+      "w": 390,
+      "text": "No fake status bar drawn — on a real phone the OS renders its own on top. All tap targets are 44px or larger."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #0E2B49; text-decoration: none; }
+    a:hover { color: #C9A227; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; height: 980px; background: #FAF7EC; font-family: Jost, 'Segoe UI', system-ui, sans-serif; color: #1F2933; display: flex; flex-direction: column; overflow: hidden; position: relative;">
+
+  <!-- header (same chrome as home) -->
+  <header style="display: flex; background: #0E2B49; flex-shrink: 0;">
+    <div style="width: 132px; display: flex; align-items: center; justify-content: center; border-right: 1px solid rgba(232,192,97,0.22);">
+      <svg width="58" height="58" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+        <circle cx="33" cy="33" r="30" stroke="#E8C061" stroke-width="1.1"/>
+        <circle cx="33" cy="33" r="24" stroke="#E8C061" stroke-width="0.7" opacity="0.65"/>
+        <path d="M33 9 L38 26 L55 31 L38 36 L33 53 L28 36 L11 31 L28 26 Z" stroke="#E8C061" stroke-width="1.1" fill="none"/>
+        <rect x="22" y="22" width="22" height="22" stroke="#E8C061" stroke-width="0.7" fill="none" transform="rotate(45 33 33)" opacity="0.75"/>
+        <circle cx="33" cy="33" r="4" fill="#E8C061"/>
+      </svg>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
+      <nav style="height: 76px; display: flex; align-items: center; gap: 30px; padding: 0 22px;">
+        <div style="display: flex; align-items: center; gap: 9px; color: #FFFFFF; font-size: 15.5px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="1.8"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg><span>Home</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 9px; color: #FFFFFF; font-size: 15.5px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg><span>Find a Masjid</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 9px; color: #E8C061; font-size: 15.5px; font-weight: 500;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg><span>Add a Masjid</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 9px; color: #FFFFFF; font-size: 15.5px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="1.8"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg><span>Report an Issue</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 9px; color: #FFFFFF; font-size: 15.5px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>About</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- dimmed page behind -->
+  <div style="flex: 1; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; display: flex; gap: 20px; padding: 24px;">
+      <div style="width: 384px; background: #FFFFFF; border-radius: 10px;"></div>
+      <div style="flex: 1; background: #EDF0EA; border-radius: 10px;"></div>
+    </div>
+    <div style="position: absolute; inset: 0; background: rgba(10,32,56,0.58);"></div>
+
+    <!-- modal -->
+    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 660px; background: #FFFFFF; border-radius: 12px; box-shadow: 0 20px 56px rgba(6,20,36,0.42); display: flex; flex-direction: column; overflow: hidden;">
+
+      <div style="position: relative; height: 56px; background: #0E2B49; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; overflow: hidden; flex-shrink: 0;">
+        <svg width="300" height="56" viewBox="0 0 300 56" fill="none" style="position: absolute; right: 0; top: 0; opacity: 0.17;" aria-hidden="true">
+          <defs><pattern id="arabF" width="34" height="34" patternUnits="userSpaceOnUse">
+            <path d="M17 3 L20.5 13.5 L31 17 L20.5 20.5 L17 31 L13.5 20.5 L3 17 L13.5 13.5 Z" fill="none" stroke="#E8C061" stroke-width="0.9"/>
+            <rect x="7" y="7" width="20" height="20" fill="none" stroke="#E8C061" stroke-width="0.5" transform="rotate(45 17 17)"/>
+          </pattern></defs>
+          <rect width="300" height="56" fill="url(#arabF)"/>
+        </svg>
+        <h2 style="margin: 0; font-family: Marcellus, Georgia, serif; font-size: 16px; letter-spacing: 2.6px; color: #E8C061; text-transform: uppercase; position: relative;">Add a Masjid</h2>
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="2" style="position: relative;"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </div>
+
+      <div style="padding: 20px 24px 6px; display: flex; flex-direction: column; gap: 14px;">
+
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #5B6570; font-weight: 300;">Tell us about a masjid that's missing from the map. It'll go live once a maintainer has checked it.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Masjid name <span style="color: #C9A227;">*</span></span>
+          <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F;">Taheri Masjid</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Locality / area</span>
+          <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F;">Nagpada</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="font-size: 13px; font-weight: 500; color: #3B4650;">City <span style="color: #C9A227;">*</span></span>
+            <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F;">Mumbai</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="font-size: 13px; font-weight: 500; color: #3B4650;">State <span style="color: #C9A227;">*</span></span>
+            <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F;">Maharashtra</div>
+          </div>
+        </div>
+
+        <div style="height: 1px; background: #EFEADB; margin-top: 2px;"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Location <span style="color: #C9A227;">*</span></span>
+          <span style="font-size: 12.5px; color: #6B7682; font-weight: 300;">Any one of these is enough — search the map, paste a link, or type the numbers.</span>
+          <div style="display: flex; gap: 10px;">
+            <span style="display: flex; align-items: center; gap: 7px; height: 38px; padding: 0 15px; background: #0E2B49; color: #FFFFFF; border-radius: 6px; font-size: 13.5px; font-weight: 500;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8C061" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>Search &amp; pick on map</span>
+            <span style="display: flex; align-items: center; gap: 7px; height: 38px; padding: 0 15px; border: 1px solid #0E2B49; color: #0E2B49; border-radius: 6px; font-size: 13.5px; font-weight: 500;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E2B49" stroke-width="2"><path d="M12 21s-7-4.7-7-10a7 7 0 0 1 14 0c0 5.3-7 10-7 10Z"/><circle cx="12" cy="11" r="2.4"/></svg>I'm here now</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <span style="font-size: 11.5px; color: #7C8691; font-weight: 400;">Latitude</span>
+            <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F; font-variant-numeric: tabular-nums;">18.957800</div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <span style="font-size: 11.5px; color: #7C8691; font-weight: 400;">Longitude</span>
+            <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14.5px; color: #12283F; font-variant-numeric: tabular-nums;">72.832100</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px; background: #DFF0E6; border-radius: 7px; padding: 9px 12px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#14603F" stroke-width="2"><path d="M12 21s-7-4.7-7-10a7 7 0 0 1 14 0c0 5.3-7 10-7 10Z"/><circle cx="12" cy="11" r="2.4"/></svg>
+          <span style="font-size: 12.5px; color: #14603F;">Location set. <span style="text-decoration: underline; font-weight: 500;">Check it on a map</span> before submitting.</span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Google Maps link <span style="color: #8B94A0; font-weight: 300;">(optional)</span></span>
+          <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14px; color: #12283F; overflow: hidden; white-space: nowrap;">https://www.google.com/maps/place/…</div>
+          <div style="display: flex; align-items: center; gap: 8px; background: #DFF0E6; border-radius: 7px; padding: 9px 12px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#14603F" stroke-width="2.2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            <span style="font-size: 12.5px; color: #14603F;">Read the pinned place from the link. Set to 18.9578, 72.8321.</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Details</span>
+          <div style="height: 66px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; padding: 10px 13px; font-size: 13.5px; color: #98A1AC; font-weight: 300; line-height: 1.5;">Anything that helps us verify — landmarks, the correct address, how you know.</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 13px; font-weight: 500; color: #3B4650;">Your name or email <span style="color: #8B94A0; font-weight: 300;">(optional)</span></span>
+          <div style="height: 42px; border: 1px solid #DED7C4; border-radius: 7px; background: #FDFCF7; display: flex; align-items: center; padding: 0 13px; font-size: 14px; color: #98A1AC; font-weight: 300;">So we can thank you or ask a follow-up</div>
+        </div>
+      </div>
+
+      <div style="padding: 16px 24px 18px; display: flex; flex-direction: column; gap: 11px; border-top: 1px solid #EFEADB; margin-top: 14px;">
+        <div style="display: flex; justify-content: flex-end; gap: 10px;">
+          <span style="display: flex; align-items: center; height: 42px; padding: 0 22px; border: 1px solid #DED7C4; color: #6B7682; border-radius: 6px; font-size: 14.5px;">Cancel</span>
+          <span style="display: flex; align-items: center; height: 42px; padding: 0 34px; background: #0E2B49; color: #FFFFFF; border-radius: 6px; font-size: 14.5px; font-weight: 500;">Submit</span>
+        </div>
+        <p style="margin: 0; text-align: center; font-size: 11.5px; color: #8B94A0; font-weight: 300;">Submissions are reviewed before they appear on the map.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

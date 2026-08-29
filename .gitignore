@@ -1,3 +1,6 @@
 .claude/
 node_modules/
 .wrangler/
+
+# Seeded design-canvas output (2.5MB, regenerated from design/*.dc.html)
+design/bohra-masjid-finder-redesign.html

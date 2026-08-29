@@ -14,6 +14,72 @@
       "googleMapsQuery": "Saifee Masjid Bhendi Bazaar Mumbai"
     },
     {
+      "id": "galiakot-fakhri-masjid",
+      "name": "Fakhri Masjid",
+      "locality": "",
+      "city": "Galiakot",
+      "state": "Rajasthan",
+      "lat": 23.545186,
+      "lng": 74.003283,
+      "verified": true,
+      "googleMapsQuery": "Fakhri Masjid Galiakot"
+    },
+    {
+      "id": "bilaspu-masjid",
+      "name": "Burhani Masjid",
+      "locality": "",
+      "city": "Bilaspur",
+      "state": "Chhattishgarh",
+      "lat": 22.084805,
+      "lng": 82.15504,
+      "verified": false,
+      "googleMapsQuery": "Burhani Masjid Bilaspur"
+    },
+    {
+      "id": "visakhapatnam-mohammadi-masjid",
+      "name": "Mohammadi Masjid",
+      "locality": "",
+      "city": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "lat": 17.77789,
+      "lng": 83.366797,
+      "verified": false,
+      "googleMapsQuery": "Mohammadi Masjid Visakhapatnam"
+    },
+    {
+      "id": "patna-al-masjid-al-saifee",
+      "name": "Al Masjid al Saifee",
+      "locality": "",
+      "city": "Patna",
+      "state": "Bihar",
+      "lat": 25.606319,
+      "lng": 85.139281,
+      "verified": false,
+      "googleMapsQuery": "Al Masjid al Saifee Patna"
+    },
+    {
+      "id": "cuttack-bohra-masjid",
+      "name": "Bohra Masjid",
+      "locality": "",
+      "city": "Cuttack",
+      "state": "Odisha",
+      "lat": 20.400959,
+      "lng": 85.8881,
+      "verified": true,
+      "googleMapsQuery": "Bohra Masjid Cuttack"
+    },
+    {
+      "id": "bengaluru-qutbi-masjid",
+      "name": "Qutbi Masjid",
+      "locality": "",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.956267,
+      "lng": 77.576693,
+      "verified": true,
+      "googleMapsQuery": "Qutbi Masjid Bengaluru"
+    },
+    {
       "id": "nagpur-burhani-masjid",
       "name": "Burhani Masjid",
       "locality": "Sadar",
@@ -24,6 +90,50 @@
       "verified": true,
       "googleMapsQuery": "Burhani Masjid Sadar Nagpur"
     },
+    {
+      "id": "bengaluru-burhani-masjid",
+      "name": "Burhani Masjid",
+      "locality": "",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.854802,
+      "lng": 77.59095,
+      "verified": true,
+      "googleMapsQuery": "Burhani Masjid Bengaluru"
+    },
+    {
+      "id": "pratapgarh-burhani-masjid",
+      "name": "Burhani Masjid",
+      "locality": "",
+      "city": "Pratapgarh",
+      "state": "Rajasthan",
+      "lat": 24.030547,
+      "lng": 74.777891,
+      "verified": false,
+      "googleMapsQuery": "Burhani Masjid Pratapgarh"
+    },
+    {
+      "id": "bhilwara-ezzi-masjid",
+      "name": "Ezzi Masjid",
+      "locality": "",
+      "city": "Bhilwara",
+      "state": "Rajasthan",
+      "lat": 25.342486,
+      "lng": 74.646558,
+      "verified": true,
+      "googleMapsQuery": "Ezzi Masjid Bhilwara"
+    },
+    {
+      "id": "galiakot-fakhri-masjid",
+      "name": "Fakhri Masjid",
+      "locality": "",
+      "city": "Galiakot",
+      "state": "Rajasthan",
+      "lat": 23.545024,
+      "lng": 74.003013,
+      "verified": true,
+      "googleMapsQuery": "Fakhri Masjid Galiakot"
+    }
     {
       "id": "rajkot-qutbi-masjid",
       "name": "Qutbi Masjid",
